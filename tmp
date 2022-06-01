@@ -3,7 +3,7 @@
 
 
 
-struct Node* create_node(void *data)
+struct Node* create_node(int data)
 {
   struct Node *node = calloc(1, sizeof(struct Node));
   // node->next = NULL;
@@ -13,6 +13,5 @@ struct Node* create_node(void *data)
 }
 void delete_node(struct Node *node)
 {
-  free(node->data);
   free(node);
 }

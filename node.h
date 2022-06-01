@@ -2,7 +2,9 @@
 
 struct Node
 {
-  int data;
+//  int data;
+//  struct Task *data;
+  void *data;
 };
 
 
@@ -10,11 +12,13 @@ struct Node
 
 struct Node
 {
-  int          data;
+  //int          data;
+//  struct Task *data;
+  void *data;
   struct Node *next;
 };
 
 #endif 
 
-struct Node* create_node(int data);
+struct Node* create_node(void *data);
 void         delete_node(struct Node *node);
